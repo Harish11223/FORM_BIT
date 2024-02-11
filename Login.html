@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="myscript.js"></script>
+</head>
+<body>
+    <navbar class="navbar">
+        <div class="logobirla">
+            <img src="BIT logo.png" alt="logo">
+            <a href="#">&nbsp; | Birla Institute of Technology Mesra</a>
+        </div>
+        <div class="navlist">
+            <img src="home.png" alt="home icon">
+            <a href="#" class="navlist-text">&nbsp;Home</a>
+            <a href="https://www.bitmesra.ac.in/Display_campus_faq?cid=1" class="navlist">&nbsp;&nbsp;FAQ</a>
+        </div>
+    </navbar>
+<div class="main">
+        <div id="moto">
+            <h1 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');> Unlocking Potential,
+                Empowering Futures </h1>
+        </div>
+        <div id="moto2">
+            <h2 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');></b>Academic Excellence
+                Meets Technical Brilliance</h1>
+        </div>
+    
+  <div id="maindiv">
+        <div class="acctypeimg">
+            <div id="chooseacctext">| Choose Account type</div>
+            <img src="student.jpg" alt="student" class="img" onclick="toggleBorderColor(this)">
+            <img src="other.jpg" alt="other" class="img" onclick="toggleBorderColor(this)">
+        </div>
+        <div class="wrapper" style="width: 342.667px; height: 348px;border-bottom-width: 0px;border-bottom-style: solid;padding-bottom: 21px;">
+            <div class="logo">
+                <img src="BIT logo.png" alt="">
+            </div>
+            <form onsubmit="login()" id="loginForm" class="p-3 mt-3" style="margin-top: 25px;">
+
+                <div class="form-field d-flex align-items-center form-group">                
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                </div>
+
+                <div class="form-field d-flex align-items-center form-group">                 
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                </div>
+
+                <button class="btn mt-3" type="submit">Login</button>           
+            </form>
+            <div class="text-center fs-6">
+                <a href="#">Forget password?</a> or <a href="#">Sign up</a>
+            </div>
+        </div>    <div class="infodiv">
+  </div>
+ </div>
+
+    <footer>
+        <div>
+            <h4>Social Page</h4>
+            <ul class="footerlist">
+                <li><a target="_blank" href="https://www.facebook.com/BITMesraRanchi" class="fa fa-facebook"></a></li>
+                <li><a target="_blank" href="https://twitter.com/BITMesra_Ranchi" class="fa fa-twitter"></a></li>
+                <li><a target="_blank" href="https://www.youtube.com/channel/UClKOCa97mxvflz2Jdpg59HQ" class="fa fa-youtube"></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/bit.mediacell/" class="fa fa-instagram"></a></li>
+            </ul>
+         </div>
+        <div>
+            <h4>Get In Touch</h4>
+            <ul class="footerlist">
+                <li><a href="/BIT_Campus_Directory?cid=1">Campus Directory</a></li>
+                <li style="display:none;"><a class="btn btn-danger btn-lg" href="/Show_Content_Section?cid=1&amp;pid=442" target="_blank">Student Queries</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Committees & Cell</h4>
+            <ul>
+                <li><a href="/Show_Other_Department?cid=1&amp;deptid=392" target="_blank">SC ST Cell</a></li>
+                <li><a href="/Show_Content_Section?cid=1&amp;pid=457">Media Cell</a></li>
+                <li><a href="/Show_Content_Section?cid=1&amp;pid=412">Anti Ragging Cell</a></li>
+                <li><a href="/Show_Content_Section?cid=1&amp;pid=409">Grievance Redressal</a></li>
+                <li><a href="https://www.bitmesra.ac.in/UploadedDocuments/pratyush_869/files/Rules_of_the_Institute.pdf" target="_blank">Service Rules and Regulations</a></li>
+                <li><a href="/Show_Content_Section?cid=1&amp;pid=410">Fire Safety</a></li>
+                <li><a href="/Show_Content_Section?cid=1&amp;pid=411">ICT Core Committee</a></li>
+                <li><a href="/Show_Content_Section?cid=1&amp;pid=366">Internal Complaint Committee</a></li>
+                <li><a href="/Show_Content_Section?cid=1&amp;pid=413">Disciplinary Committee</a></li>
+                <li><a href="/Show_Other_Department?cid=1&amp;deptid=422">Value Education Cell</a></li>
+                <li><a class="label label-danger" href="/Show_Content_Section?cid=1&amp;pid=483">Foundation Day 2023</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Others</h4>
+            <ul>
+                <li><a class="label label-danger" href="https://www.bitmesra.ac.in/Show_Content_Section?cid=1&amp;pid=365" target="_blank">ERP Portal</a></li>
+                <li><a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=322526" target="_blank">SB Collect</a></li>
+                <li><a href="https://www.mathworks.com/academia/tah-portal/birla-institute-of-technology-1095860.html" target="_blank">Matlab Portal</a></li>
+                <li><a href="/Show_Other_Department?cid=1&amp;deptid=402">राजभाषा प्रकोष्ठ&nbsp;</a></li>
+                <li><a href="/Show_Content_Section?cid=1&amp;pid=428">Student Satisfaction Survey (NAAC)</a></li>
+                <li><a href="https://bitmesra.ac.in/BIT_Recent_Openings_JRF_SRF_PF_RF_00893?cid=1">JRF / SRF Openings</a></li>
+                <li><a href="https://aicte-india.org/feedback/index.php" target="_blank">Student/Faculty Feedback (AICTE web portal)</a></li>
+                <li><a href="/Show_Content_Section?cid=1&amp;pid=456">Technical, Scientific Events and Festivals</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="index.js" type="module"></script>
+    <script src="firebase.js" type="module"></script>
+    </body>
+    
+    </html>

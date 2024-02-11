@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script>
+        function validateAndRedirect() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Check if username or password is empty
+            if (username === "" || password === "") {
+                alert("Username and password are required");
+            } else {
+                // Redirect user to new page
+                window.location.href = "Info.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Login Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+            <!-- Bootstrap styled button -->
+            <button type="button" class="btn btn-primary" onclick="validateAndRedirect()">Login</button>
+        </form>
+    </div>
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
